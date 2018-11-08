@@ -1,0 +1,561 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+/* Global Reset */
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900");
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-image: url("/assets/img/background-pattern.png");
+  font: 13.34px 'Space Mono', monospace;
+  font-size: small;
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-size: 100%; }
+
+h1 {
+  margin-bottom: 1em; }
+
+h3 {
+  font-size: 26pt; }
+
+p {
+  margin: 1em 0;
+  font-family: 'Space Mono', monospace; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em; }
+
+.posts li {
+  line-height: 1.75em; }
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%; }
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 80vw;
+  margin: 3em auto 2em;
+  line-height: 1.5em; }
+
+.header a {
+  font-weight: bold;
+  text-decoration: none; }
+
+.title {
+  display: inline-block;
+  margin-bottom: 2em; }
+
+.title a {
+  color: #a00; }
+
+.title a:hover {
+  color: #000; }
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em; }
+
+.header a.extra:hover {
+  color: #000; }
+
+.meta {
+  color: #aaa; }
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em; }
+
+.post ul, .post ol {
+  margin-left: 1.35em; }
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em; }
+
+.post pre code {
+  border: none; }
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF; }
+
+.post pre.terminal code {
+  background-color: #333; }
+
+/*****************************************************************************/
+/*
+/* Containers
+/*
+/*****************************************************************************/
+.container-1, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .container-8 {
+  display: inline-block; }
+
+.container-1 {
+  width: 10%; }
+
+.container-2 {
+  width: 22.5%; }
+
+.container-3 {
+  width: 35%; }
+
+.container-4 {
+  width: 47.5%; }
+
+.container-5 {
+  width: 60%; }
+
+.container-6 {
+  width: 72.5%; }
+
+.container-7 {
+  width: 85%; }
+
+.container-8 {
+  width: 97.5%; }
+
+/*****************************************************************************/
+/*
+/* Special Global Rules
+/*
+/*****************************************************************************/
+.content {
+  margin-bottom: 5%; }
+
+.hero-section h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 64pt; }
+
+#home .hero-section {
+  height: 80vh; }
+  #home .hero-section .hero-left {
+    float: left;
+    display: inline-block;
+    width: 45%; }
+    #home .hero-section .hero-left img {
+      width: 100%; }
+  #home .hero-section .hero-right {
+    width: 50%;
+    float: left;
+    margin-left: 30px;
+    display: inline-block; }
+    #home .hero-section .hero-right .bio-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 46pt;
+      font-weight: 700; }
+    #home .hero-section .hero-right .bio-blurb {
+      width: 90%;
+      font-family: 'Space Mono', monospace;
+      color: #222;
+      text-align: justify; }
+    #home .hero-section .hero-right .hire-highlight {
+      padding-top: 10%;
+      width: 60%;
+      margin: 0 auto; }
+    #home .hero-section .hero-right .hire-me {
+      margin-left: 3vw;
+      padding-top: 10%; }
+    #home .hero-section .hero-right .btn {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      color: #fff;
+      padding: 5px 20px;
+      background-color: #f2be70;
+      border: none; }
+    #home .hero-section .hero-right .btn-primary {
+      width: 50%;
+      border-radius: 50px; }
+    #home .hero-section .hero-right .email-contact {
+      font-family: 'Space Mono', monospace;
+      font-size: 10pt;
+      margin-top: 50px; }
+
+#work h1, #work h2, #work h3, #work h4, #work h5, #work h6 {
+  font-family: 'Playfair Display', serif; }
+
+#work h3 {
+  font-size: 26pt; }
+
+#work .content {
+  margin-top: 7%; }
+  #work .content .book-cover img {
+    width: 100%; }
+  #work .content .book-synopse {
+    height: 100%;
+    vertical-align: top; }
+    #work .content .book-synopse h3, #work .content .book-synopse p, #work .content .book-synopse .download-link {
+      padding-left: 5%; }
+    #work .content .book-synopse .published-year {
+      font-size: 9pt;
+      color: #101010; }
+    #work .content .book-synopse .download-link a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 700; }
+    #work .content .book-synopse .download-link a:hover {
+      text-decoration: none;
+      color: #f2be70; }
+    #work .content .book-synopse .download-link img, #work .content .book-synopse .download-link p {
+      display: inline-block; }
+    #work .content .book-synopse .download-link p {
+      font-size: 10pt; }
+
+/*****************************************************************************/
+/*
+/* Responsive Design Rules
+/*
+/*****************************************************************************/
+#articles h1, #articles h2, #articles h3, #articles h4, #articles h5, #articles h6 {
+  font-family: 'Playfair Display', serif; }
+
+#articles p {
+  font-family: 'Space Mono', monospace; }
+
+#articles h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 64pt; }
+
+#articles .content {
+  margin-top: 5%; }
+
+#articles .article {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 1%;
+  margin-top: 1%;
+  width: 32%; }
+  #articles .article:last-child {
+    margin-right: 0; }
+  #articles .article .article_image img {
+    width: 100%; }
+  #articles .article .article_title, #articles .article .article_source {
+    text-align: center; }
+  #articles .article .article_title {
+    padding-top: 3%;
+    font-size: 28px; }
+    #articles .article .article_title a {
+      text-decoration: none;
+      color: #222; }
+    #articles .article .article_title a:hover {
+      text-transform: underline;
+      color: #f2be70; }
+  #articles .article .article_source {
+    font-size: 12px; }
+
+#multimedia .content {
+  margin-top: 5%;
+  width: 100%; }
+  #multimedia .content .video-container {
+    margin-top: 3%; }
+  #multimedia .content .description {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    margin-left: 1%; }
+
+#logo {
+  margin-left: 30px;
+  margin-top: 10px;
+  position: fixed;
+  width: 25%;
+  font-family: 'Space Mono', monospace;
+  font-size: 16pt;
+  font-weight: 700; }
+  #logo a {
+    text-decoration: none;
+    color: #222; }
+  #logo a:hover {
+    color: #f2be70; }
+
+.divider {
+  position: fixed;
+  margin-left: 50px;
+  margin-top: 3.5%; }
+
+.social {
+  margin-left: 40px;
+  margin-top: 7%;
+  width: 10%;
+  position: fixed; }
+  .social #facebook, .social #instagram, .social #linkedin {
+    display: block;
+    width: 16%;
+    margin-top: 10%; }
+
+.menu {
+  list-style: none;
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 13px; }
+
+.menu-item {
+  display: inline;
+  color: #222;
+  font-family: 'Space Mono', monospace;
+  margin-right: 15px; }
+  .menu-item a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #222; }
+  .menu-item a:hover {
+    text-decoration: inherit;
+    font-weight: 700;
+    padding-top: 2px;
+    color: #f2be70; }
+
+.menu-item:last-child {
+  margin-right: 0; }
+
+.menu-highlight {
+  font-weight: 700;
+  color: #f2be70; }
+  .menu-highlight a {
+    color: #f2be70;
+    font-weight: 700; }
+  .menu-highlight a:hover {
+    color: #f2be70;
+    font-weight: #f2be70; }
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.cv-opennav {
+  color: #f2be70; }
+
+.open-icon {
+  width: 6%;
+  position: absolute;
+  right: 40px;
+  top: 2.5%; }
+  .open-icon img {
+    width: 100%; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+#mySidenav, .open-icon {
+  display: none; }
+
+/*****************************************************************************/
+/*
+/* Responsive Design Rules
+/*
+/*****************************************************************************/
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-device-width: 1240px) {
+  #mySidenav, .open-icon {
+    display: none; }
+  .menu {
+    margin: 0 0 0 40%;
+    width: 55%; }
+  .social, .divider {
+    display: none; }
+  #home {
+    margin-top: 13%; }
+  #home .hero-section .hero-left {
+    width: 55%; }
+  #home .hero-section .hero-right {
+    width: 40%; }
+  #home .hero-section .hero-right .bio-name {
+    font-size: 34pt; }
+  #home .hero-section .hero-right .bio-blurb {
+    margin-top: 5%;
+    font-size: 13pt;
+    width: 90%; }
+  #home .hero-section .hero-right .hire-highlight {
+    width: 70%;
+    padding-top: 0; }
+  #home .hero-section .hero-right .hire-me {
+    margin-left: 1vw;
+    margin-top: 1vh; }
+  #work .book-cover {
+    width: 55%; }
+  #work .book-synopse {
+    width: 40%; }
+  #articles .article {
+    width: 45%;
+    margin-right: 4%; }
+  #article .article:last-child {
+    margin-right: 0; }
+  #multimedia .video-container {
+    width: 100%; }
+  #multimedia .video-container .video, #multimedia .video-container .description {
+    width: 100%;
+    display: block; }
+  #multimedia .video-container .video iframe {
+    width: 100%;
+    height: 456px; }
+  #multimedia .video-container .description {
+    margin: 8% 0; } }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-device-width: 1023px) {
+  #mySidenav, .open-icon {
+    display: block; }
+  .open-icon {
+    width: 3%; }
+  .social, .divider, .menu {
+    display: none; }
+  #logo {
+    position: absolute;
+    margin-top: 0;
+    top: 2%; }
+  #home {
+    margin-top: 30%; }
+  #home .hero-section {
+    width: 100%; }
+  #home .hero-section .hero-left, #home .hero-section .hero-right {
+    float: none;
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
+  #home .hero-section .hero-right .bio-name {
+    text-align: center;
+    font-size: 32pt;
+    margin: 3% 0; }
+  #home .hero-section .hero-right .bio-blurb {
+    text-align: center;
+    font-size: 14pt;
+    line-height: 24pt;
+    width: 100%; }
+  #home .hero-section .hero-right .btn-primary {
+    width: 100%; }
+  #home .hero-section .hero-right .hire-me {
+    margin-left: 0; }
+  #home .hero-section .hero-right .email-contact {
+    text-align: center; }
+  #contact .hero-section h1, #photography .hero-section h1, #multimedia .hero-section h1, #articles .hero-section h1, #work .hero-section h1 {
+    font-size: 28pt;
+    text-align: center;
+    margin: 20% 0; }
+  #work .hero-section h1 {
+    font-size: 28pt;
+    text-align: center;
+    margin: 20% 0; }
+  #work .book-cover {
+    width: 100%;
+    display: block; }
+  #work .book-synopse {
+    width: 100%;
+    display: block;
+    margin-top: 5%; }
+  #work .content .book-synopse h3, #work .content .book-synopse p, #work .content .book-synopse .download-link {
+    padding-left: 0;
+    text-align: center; }
+  #articles .article {
+    width: 100%; }
+  #article .article {
+    margin-right: 0; }
+  #multimedia .video-container {
+    width: 100%; }
+  #multimedia .video-container .video, #multimedia .video-container .description {
+    width: 100%;
+    display: block; }
+  #multimedia .video-container .video iframe {
+    width: 100%;
+    height: 456px; }
+  #multimedia .video-container .description {
+    margin: 8% 0; } }
+
+/* POSSIBLE USE QUERIES:
+   Smartphones (landscape)
+@media only screen and (min-width: 321px) {
+  
+}
+
+   Smartphones (portrait)
+@media only screen and (max-width: 320px) {
+  
+}
+
+   iPads (landscape)
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+ 
+}
+
+   iPads (portrait) 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+}
+*/
